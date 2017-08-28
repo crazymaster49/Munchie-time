@@ -80,7 +80,7 @@ $(function() {
   $("button.is-primary").click(function() {
     var enter0 = $("input").val()
     if (lat) {
-      $.get(`http://galvanize-cors-proxy.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBS9VzSULa8twrcLqcpI2u6oXCLHztWVkg&location=${lat},${lan}&radius=3000&types=food,restaurant&opennow&keyword=` + enter0).then(function(data) {
+      $.get(`https://galvanize-cors-proxy.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBS9VzSULa8twrcLqcpI2u6oXCLHztWVkg&location=${lat},${lan}&radius=3000&types=food,restaurant&opennow&keyword=` + enter0).then(function(data) {
         console.log(data.results)
         // console.log(data.results[2].name)
 
@@ -109,7 +109,7 @@ $(function() {
     } else {
 
     console.log(enter0)
-    $.get(`http://galvanize-cors-proxy.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBS9VzSULa8twrcLqcpI2u6oXCLHztWVkg&location=39.7392,-104.9903&radius=3000&types=food,restaurant&opennow&keyword=` + enter0).then(function(data) {
+    $.get(`https://galvanize-cors-proxy.herokuapp.com/https://maps.googleapis.com/maps/api/place/nearbysearch/json?key=AIzaSyBS9VzSULa8twrcLqcpI2u6oXCLHztWVkg&location=39.7392,-104.9903&radius=3000&types=food,restaurant&opennow&keyword=` + enter0).then(function(data) {
       console.log(data.results)
       // console.log(data.results[2].name)
 

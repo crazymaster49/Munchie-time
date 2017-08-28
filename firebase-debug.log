@@ -1,0 +1,40 @@
+[debug] [2017-08-23T20:15:28.967Z] ----------------------------------------------------------------------
+[debug] [2017-08-23T20:15:28.969Z] Command:       /usr/local/Cellar/node/8.2.1/bin/node /usr/local/bin/firebase use --add
+[debug] [2017-08-23T20:15:28.970Z] CLI Version:   3.9.2
+[debug] [2017-08-23T20:15:28.970Z] Platform:      darwin
+[debug] [2017-08-23T20:15:28.970Z] Node Version:  v8.2.1
+[debug] [2017-08-23T20:15:28.970Z] Time:          Wed Aug 23 2017 14:15:28 GMT-0600 (MDT)
+[debug] [2017-08-23T20:15:28.970Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2017-08-23T20:15:28.981Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase"]
+[debug] [2017-08-23T20:15:28.982Z] > authorizing via signed-in user
+[debug] [2017-08-23T20:15:28.984Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2017-08-23T20:15:28.985Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token { refresh_token: '1/WPWaJUP767CU4up1Jo6Ryc0XGeEpNlXlpS-DUS-2gxM',
+  client_id: '563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com',
+  client_secret: 'j9iVZfS8kkCEFUPaAeJV0sAi',
+  grant_type: 'refresh_token',
+  scope: 'email https://www.googleapis.com/auth/cloudplatformprojects.readonly https://www.googleapis.com/auth/firebase openid' } 
+ Wed Aug 23 2017 14:15:28 GMT-0600 (MDT)
+[debug] [2017-08-23T20:15:29.215Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-23T20:15:29.230Z] >>> HTTP REQUEST GET https://admin.firebase.com/v1/projects  
+ Wed Aug 23 2017 14:15:29 GMT-0600 (MDT)
+[debug] [2017-08-23T20:15:29.546Z] <<< HTTP RESPONSE 200
+[debug] [2017-08-23T20:15:53.669Z] TypeError: Cannot read property 'short' of undefined
+    at Prompt.render (/usr/local/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/list.js:94:69)
+    at Prompt.onSubmit (/usr/local/lib/node_modules/firebase-tools/node_modules/inquirer/lib/prompts/list.js:116:8)
+    at AnonymousObserver.Rx.AnonymousObserver.AnonymousObserver.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1535:12)
+    at AnonymousObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver.tryCatcher (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:63:31)
+    at AutoDetachObserverPrototype.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:5782:51)
+    at AutoDetachObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver._onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:4234:13)
+    at AnonymousObserver.Rx.AnonymousObserver.AnonymousObserver.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1535:12)
+    at AnonymousObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at AnonymousObserver.tryCatcher (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:63:31)
+    at AutoDetachObserverPrototype.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:5782:51)
+    at AutoDetachObserver.Rx.internals.AbstractObserver.AbstractObserver.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:1469:31)
+    at Subject.onNext (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:5902:19)
+    at Subject.tryCatcher (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:63:31)
+    at AutoDetachObserverPrototype.next (/usr/local/lib/node_modules/firebase-tools/node_modules/rx-lite/rx.lite.js:5782:51)
+[error] 
+[error] Error: An unexpected error has occurred.
